@@ -33,7 +33,7 @@ def gauss(A):
         for j in range(row):
             if j != i:
                 A[j, :] = A[j, :] - A[j, i] * A[i, :]
-        printMatrix(A)
+        printMatrix(A)  # 중간과정 보여줌
 
     x = A[:, -1]
     return x
